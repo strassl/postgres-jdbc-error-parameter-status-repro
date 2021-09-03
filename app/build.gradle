@@ -1,0 +1,16 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile "org.postgresql:postgresql:42.2.23"
+    compile("com.opentable.components:otj-pg-embedded:0.13.3")
+}
+
+application {
+    mainClass = 'demo.App'
+}
